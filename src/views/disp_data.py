@@ -1,2 +1,2 @@
-def disp_data(div, df, height):
-    div.dataframe(df, width=2500, height=height, hide_index=True)
+def disp_data(area, data, height):
+    area.dataframe(data, width=2500, height=height, hide_index=True)

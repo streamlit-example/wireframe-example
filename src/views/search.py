@@ -1,11 +1,11 @@
 # 検索
-def search(div):
-    div.title("Search Commands")
-    div.multiselect("Status", options=["just_uploaded", "calculating", "calculated"])
-    div.text_input("Name")
-    div.text_input("Type")
-    div.number_input("Max Size", value=None)
-    div.number_input("Min Size", value=None)
+def search(area):
+    area.title("Search Commands")
+    area.multiselect("Status", options=["just_uploaded", "calculating", "calculated"])
+    area.text_input("Name")
+    area.text_input("Type")
+    area.number_input("Max Size", value=None)
+    area.number_input("Min Size", value=None)
 
-    div.title("Reload")
-    div.button("Reload Data")
+    area.title("Reload")
+    area.button("Reload Data")

@@ -14,22 +14,21 @@ df = pd.read_csv("./assets/data.csv", encoding="utf-8")
 st.set_page_config(layout="wide")
 
 # ヘッダー
-st.header("Sample App 1", divider="gray")
+st.header("Wireframe Sample", divider="gray")
 
 # サイドバー: 検索条件入力欄
-search(st.sidebar)
+search(area=st.sidebar)
 
 # タブ
-# 選んだアクションに従ってアクションの表示と処理の呼び出す
 tabs = st.tabs(["Add Data", "Modify Data & Calculate", "Check Metrics"])
 with tabs[0]:
-    disp_data(st, df, 230)
-    add_data(st)
+    disp_data(area=st, data=df, height=230)
+    add_data(area=st)
 
 with tabs[1]:
-    disp_data(st, df, 570)
-    modify_and_calc(st)
+    disp_data(area=st, data=df, height=570)
+    modify_and_calc(area=st)
 
 with tabs[2]:
-    disp_data(st, df, 230)
-    check_metrics(st, df)
+    disp_data(area=st, data=df, height=230)
+    check_metrics(area=st, data=df)
