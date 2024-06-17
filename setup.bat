@@ -1,4 +1,3 @@
-cd ..
 
 python -m venv direnv
 call direnv\Scripts\activate.bat
