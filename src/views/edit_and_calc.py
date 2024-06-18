@@ -1,9 +1,9 @@
 import streamlit as st
 
 
-def modify_and_calc(area):
+def edit_and_calc(area):
     col_l, col_r = area.columns([1, 7])
-    if col_l.checkbox("Modify Mode"):
+    if col_l.checkbox("Edit Mode"):
         # 変更反映ボタンを押さなければ何もしない
         if not col_r.button("Save Changes"):
             return None

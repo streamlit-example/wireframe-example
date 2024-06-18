@@ -4,7 +4,7 @@ import streamlit as st
 from views.add_data import add_data  # type: ignore
 from views.check_metrics import check_metrics  # type: ignore
 from views.disp_data import disp_data  # type: ignore
-from views.modify_and_calc import modify_and_calc  # type: ignore
+from views.edit_and_calc import edit_and_calc  # type: ignore
 from views.search import search  # type: ignore
 
 # データの取得
@@ -20,14 +20,14 @@ st.header("Wireframe Sample", divider="gray")
 search(area=st.sidebar)
 
 # タブ
-tabs = st.tabs(["Add Data", "Modify Data & Calculate", "Check Metrics"])
+tabs = st.tabs(["Add Data", "Edit & Calculate", "Check Metrics"])
 with tabs[0]:
     disp_data(area=st, data=df, height=230)
     add_data(area=st)
 
 with tabs[1]:
     disp_data(area=st, data=df, height=570)
-    modify_and_calc(area=st)
+    edit_and_calc(area=st)
 
 with tabs[2]:
     disp_data(area=st, data=df, height=230)

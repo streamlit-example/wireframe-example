@@ -1,4 +1,4 @@
-id_by_user,name,type,size_x,size_y,size_z,remarks,first_upload_date,update_date,reference,rate,status
+ID,Name,Type,Size X [cm],Size Y [cm],Size Z [cm],Remarks,First Upload,Update,References,Rate,Status
 1,ItemA,Type1,10.5,1,2,aああ,2024-06-13T09:22:08.799,2024-06-14T19:49:12.272,,0.431366466950087,under_review
 2,ItemB,Type2,20,2,3,a,2024-06-13T09:22:08.801,2024-06-14T19:49:12.272,,0.597553327581441,under_review
 3,ItemC,Type1,15.3,3,4,a,2024-06-13T09:22:08.801,2024-06-14T19:49:12.272,,0.965345396096767,under_review

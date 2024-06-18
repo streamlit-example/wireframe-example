@@ -10,7 +10,7 @@ def add_row(area):
     area.subheader("Add Data")
 
     cols1 = area.columns(3)
-    cols1[0].text_input("ID (optional)", key="id")
+    cols1[0].text_input("ID", key="id")
     cols1[1].text_input("Name", key="name")
     cols1[2].text_input("Type", key="type")
 
@@ -25,7 +25,7 @@ def add_row(area):
 
 
 def add_files(area):
-    area.file_uploader("Files")
+    area.file_uploader("Files", accept_multiple_files=True)
     area.button("Upload Files")
 
 
