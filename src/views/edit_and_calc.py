@@ -19,12 +19,12 @@ def edit_and_calc(area):
         calc()
 
 
-@st.experimental_dialog("Modification saved")
+@st.dialog("Modification saved")
 def inform_modified():
     pass
 
 
-@st.experimental_dialog("Calculate")
+@st.dialog("Calculate")
 def calc():
     st.write("Are you sure you want to request calculation?")
     st.text_input("Any Comments:")
